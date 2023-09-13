@@ -1,0 +1,20 @@
+#!/bin/bash
+# This script extracts all the zip files found in the current folder.
+
+# Usage: ./extract_zips.sh
+
+echo "Extracting all the zip files found in the folder."
+
+# Extraction
+for ZIP in *.zip
+do
+  # Extract each zip file into a folder with the same name (excluding .zip extension)
+  unzip "$ZIP" -d "${ZIP%.zip}"
+  if [ $? -eq 0 ]; then
+    echo "Extracted: $ZIP"
+  else
+    echo "Failed to extract: $ZIP"
+  fi
+done
+
+echo "Finished."
