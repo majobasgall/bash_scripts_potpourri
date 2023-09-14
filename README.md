@@ -4,9 +4,11 @@ A diverse collection of Bash scripts for various purposes - a little bit of ever
 
 ## Scripts Overview
 
-1. [Extract ZIP Files](#1-extract-zip-files)
-2. [Get System Information](#2-get-system-information)
-3. [Configure Git](#3-configure-git)
-4. [Make Bash Scripts Executable Anywhere](#4-make-bash-scripts-executable-anywhere)
-5. [Data Project Structure Generator](#5-data-project-structure-generator)
-6. [Enable/Disable Webcam Modules](#6-enable-disable-webcam-modules)
+* [Cleanup Pacman Cache](#cleanup_pacman_cache): Cleans up unused packages in Arch Linux's package cache.
+* [Extract ZIP Files](#extract_zips): Extracts ZIP files located in a specified folder.
+* [Get System Information](#get_system_info): Retrieves system information including kernel version and hardware details.
+* [Configure Git](#git_first_time): Sets up essential Git configurations like username, email, and aliases.
+* [Make Bash Scripts Executable Anywhere](#make_me_executable): Allows running Bash scripts from any location in the system.
+* [Data Project Structure Generator](#project_structure_generator): Generates a structured project directory for data-related projects.
+* [Backup to multiple destinations](#sync_to_multi_destinations): Backs up data to multiple specified destinations.
+* [Enable/Disable Webcam Modules](#webcam_state): Enables or disables webcam modules in the system.
