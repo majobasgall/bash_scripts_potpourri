@@ -11,7 +11,7 @@ A diverse collection of Bash scripts for various purposes - a little bit of ever
 * [Install Apache Superset](#install_superset): Installs and sets up Apache Superset
 * [Make Bash Scripts Executable Anywhere](#make_me_executable): Allows running Bash scripts from any location in the system.
 * [Data Project Structure Generator](#project_structure_generator): Generates a structured project directory for data-related projects.
-* [Run Apache Airflow on Specific Port](#run_airflow): Check if the desired port is available and run Apache Airflow
+* [Run Apache Airflow on Specific Port](#run_airflow): Checks if the desired port is available and runs Apache Airflow
 * [Spark Configuration Parameter Calculator](#spark_submit_calculated_parameters): Automatically calculates Spark configuration parameters based on available hardware resources.
 * [Backup to multiple destinations](#sync_to_multi_destinations): Backs up data to multiple specified destinations.
 * [Enable/Disable Webcam Modules](#webcam_state): Enables or disables webcam modules in the system.
