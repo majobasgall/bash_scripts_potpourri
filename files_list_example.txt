@@ -1,0 +1,2 @@
+1,$HOME/docs/my_passport.pdf
+2,$HOME/cv/2024/cv_latest.pdf
