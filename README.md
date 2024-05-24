@@ -16,3 +16,4 @@ A diverse collection of Bash scripts for various purposes - a little bit of ever
 * [Spark Configuration Parameter Calculator](#spark_submit_calculated_parameters): Automatically calculates Spark configuration parameters based on available hardware resources.
 * [Backup to multiple destinations](#sync_to_multi_destinations): Backs up data to multiple specified destinations.
 * [Enable/Disable Webcam Modules](#webcam_state): Enables or disables webcam modules in the system.
+* [Common Doc Linker](#common_doc_linker): Easily create symbolic links for selected documents from a customizable list.
