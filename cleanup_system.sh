@@ -75,6 +75,36 @@ remove_old_logs() {
     fi
 }
 
+# Function to select what Docker component clean
+clean_docker_component() {
+    echo "Select Docker component to clean"
+    echo "0. Images (are templates used to create Docker containers)"
+    echo "1. Containers (are instances of Docker images)"
+    echo "2. Volumes (are directories stored outside of containers, often used to persist data)"
+    echo "3. Build Cache (stores intermediate build layers during image builds)"
+
+    read -p "Select an option (0/1/2/3): " choice
+
+    case $choice in
+        0)
+            docker image prune
+            ;;
+        1)
+            docker container prune
+            ;;
+        2)
+            docker volume prune
+            ;;
+        3)
+            docker builder prune
+            ;;
+        *)
+            echo "Invalid choice. Please select a valid option."
+            ;;
+    esac
+}
+
+
 while true; do
     echo "Release Space System"
     echo "0. Clean up Pacman Cache"
@@ -82,9 +112,10 @@ while true; do
     echo "2. Purge Home Cache Files"
     echo "3. Remove Orphaned Packages"
     echo "4. Show /var/log Size and Remove Old Logs"
-    echo "5. Quit"
+    echo "5. Clean up Docker components"
+    echo "6. Quit"
 
-    read -p "Select an option (0/1/2/3/4/5): " choice
+    read -p "Select an option (0/1/2/3/4/5/6): " choice
 
     case $choice in
         0)
@@ -104,6 +135,11 @@ while true; do
             remove_old_logs
             ;;
         5)
+            docker system df
+            clean_docker_component
+	    docker system df
+            ;;
+        6)
             echo "Exiting..."
             exit 0
             ;;
